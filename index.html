@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クイック検索</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <script>
+        function search() {
+          var search = document.getElementById('searchbox');
+          var searching = search.value;
+          location.href = 'https://www.google.com/search?q=' + searching;
+        }
+   </script>
+   <input type="text" name="" id="searchbox" cols="60" rows="1" style="padding: 10px; padding-left: 15px; resize: none; border-radius: 90px;" placeholder="検索するものをここに入力"></input>
+   <input type="button" value="検索" onclick="search();" style="padding: 20px; margin: 10px; border-radius: 90px;">
+</body>
+</html>
